@@ -526,42 +526,7 @@ class _LoginPageState extends State<LoginPage> {
 
 ---
 
-## 12. Quick Revision Sheet
-
-| Need | Use |
-|---|---|
-| Space around a widget | `Padding` |
-| Fixed gap between widgets | `SizedBox` |
-| Box with colour, border, rounded corners | `Container` + `BoxDecoration` |
-| Items one below another | `Column` |
-| Items side by side | `Row` |
-| Spread items out | `MainAxisAlignment.spaceBetween` / `spaceEvenly` |
-| Full-width children in a Column | `CrossAxisAlignment.stretch` |
-| Fill the remaining space | `Expanded` |
-| Share space but stay small | `Flexible` |
-| Fix keyboard overflow | `SingleChildScrollView` |
-| Avoid notch and status bar | `SafeArea` |
-| Limit maximum width | `ConstrainedBox` |
-| Screen size | `MediaQuery.of(context).size` |
-| Size given by parent | `LayoutBuilder` |
-
----
-
-## 13. Practice Exercises
-
-Try these without looking at the notes first.
-
-1. Make a Row with three coloured boxes and test every `MainAxisAlignment` value.
-2. Make a Row where the first box has `flex: 1` and the second has `flex: 3`.
-3. Place a TextField and a button side by side in a Row. Make the TextField fill the extra space.
-4. Create a Column with 20 Text widgets. Observe the overflow error, then fix it with SingleChildScrollView.
-5. Build a profile card using Container, Row and Column (image on the left, name and details on the right).
-6. Change the Login Page `maxWidth` to 300 and 600 and see how it behaves in a wide window.
-7. Create your own reusable button widget with a `label` and an `onPressed` function.
-
----
-
-## 14. Learning Resources
+## 12. Learning Resources
 
 | Resource | Link |
 |---|---|
@@ -576,18 +541,3 @@ Try these without looking at the notes first.
 | Adaptive and Responsive Design | https://docs.flutter.dev/ui/adaptive-responsive |
 
 ---
-
-## 15. Summary
-
-- Parents give limits, children choose a size, parents decide position.
-- Container adds size, spacing and decoration.
-- Row and Column arrange widgets. Their main axis is different.
-- MainAxisAlignment works along the main axis. CrossAxisAlignment works across it.
-- Expanded fills leftover space. Flexible shares space but can stay small.
-- SingleChildScrollView fixes overflow on forms.
-- SafeArea, ConstrainedBox, MediaQuery and LayoutBuilder help a screen work on many sizes.
-- Reusable widgets remove repeated code and keep screens clean.
-
----
-
-*Learning approach: Understand the concept, explore the widget, implement it in a practical application, execute it and document the outcome.*
